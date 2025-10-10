@@ -454,8 +454,14 @@ footer li {
     text-align: center;
   }
 
-  .sticky-top {
-    overflow: hidden;
+    .sticky-top {
+    overflow: visible !important;
+    z-index: 9999;
+  }
+
+  .offcanvas {
+    z-index: 1055 !important;
+    background-color: white;
   }
 
   .timeline li .timeline-image {
@@ -492,4 +498,17 @@ footer li {
   .timeline li .timeline-panel::after {
     top: 31px;
   }
+
+  .simply-countdown {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.simply-countdown .simply-section {
+  width: 70px;
+  padding: 15px;
+  text-align: center;
+}
+
 }
